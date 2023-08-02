@@ -1,0 +1,137 @@
+/* This style sheet is used to modify the apperance of the website */
+/* Selects background color and padding of all pagess */
+html, body {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #C5DCA0;
+  }
+/* Allows header(title and nav bar) to stay at the top of the page */
+.header{
+    top: 20;
+    width: 100%;
+    background-color: #C5DCA0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+/* Selects spacing of content in containers */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px 20px 0 20px;
+}
+/* Selects spacing of content in box class */
+.container .box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Adds columns to box class */
+.container .box .gallery{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+/* Allows all images to have the same size in the columns */
+.container .box .gallery img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+/* Selects color and font of text */
+h1, h2, h3, h4, p, a {
+    color: #232C33;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+/* Selects the margin/spacing of the header 1 text */
+h1 {
+    margin: 25px 10px 0 5px;
+}
+.nav {
+    margin: 25px 10px 0 5px;
+}
+/* Items on the nav bar will be spaced out by 14px */
+.nav li{
+    padding: 14px;
+}
+/* Removes dots from nav bar list */
+ul {
+    list-style-type: none;
+    margin: 8;
+    padding: 0;
+  }
+/* Listed items will be aligned to the left */
+li {
+    float: left;
+    display: block;
+}
+
+/*This is experiment with highlight on nav bar(pages: bio, artworks, contact)
+.nav ul li a:hover{
+    color:#C5DCA0;
+    background: #232C33;
+}
+*/
+/* Allows links and text to be on the same line when displayed on page */
+a {
+    display: inline-block;
+}
+
+/* 
+.nav a:link {
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #084B83;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+.nav a:active {
+    text-decoration: underline;
+    text-decoration-color: #084B83;
+}
+
+/* Selects spacing and alignment of content/text in the contact page */
+  .contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin: 0px 20px 0 25px;
+    padding-bottom: 40px;
+  }
+/* Selects spacing and alignment of content/text in the bio page */
+ .bio{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin: 0px 20px 0 25px;
+    padding-bottom: 40px;
+  }
+/* Ensures you only have one column of photos on phone or small screen view */
+@media only screen and (min-width: 768px){
+
+}
+/* 648 Ensures you only have one column of photos on breakpoint/small screen view */
+@media only screen and (max-width: 648px){
+    .header {
+        width: 100%;
+    }
+    .header h1{
+        width: 100%;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+    }
+}
+
