@@ -16,13 +16,29 @@ html, body {
 
 /* Allows header(title and nav bar) to stay at the top of the page */
 .header{
-    top: 20;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     width: 100%;
     background-color: var(--bg-color);
     display: flex;
+    padding: 27px 17%;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon a{
+    font-size: 30px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
 }
 
 /* Selects spacing of content in containers */
@@ -61,6 +77,7 @@ h1 {
 .nav {
     margin: 15px 22px;
     display: flex;
+    font-size: 20px;
 }
 /* Items on the nav bar will be spaced out by 14px */
 .nav li{
@@ -68,7 +85,7 @@ h1 {
 }
 
 #menu-icon{
-    color:#232C33;
+    color: var(--text-color);
     font-size: 30px;
     cursor: pointer;
     z-index: 10001;
@@ -114,18 +131,10 @@ a {
 
 /* 648 Ensures you only have one column of photos on breakpoint/small screen view */
 @media (max-width: 1050px){
-    .header {
-        width: 100%;
-    }
-    .header h1{
-        width: 100%;
-        justify-content: left;
-        align-items: left;
-        text-align: left;
-    }
 
     #menu-icon{
         display: block;
+        font-size: 40px;
     }
 
     .nav{
@@ -135,19 +144,26 @@ a {
         padding: 40px 60px;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: 100%;
         right: 0;
         display: flex;
         flex-direction: column;
+        background: var(--bg-color);
         transition: all .50s ease;
     }
 
     .nav a{
         display: block;
+        color:blue;
         padding: 0;
         margin: 0px 0px 40px 0px;
         font-size: 2.2rem;
         font-weight: 400;
+    }
+
+    .nav.open{
+        left: 0;
+
     }
 
 }
