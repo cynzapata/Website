@@ -16,6 +16,7 @@ html, body {
     align-items: center;
     padding-bottom: 10px;
 }
+
 /* Selects spacing of content in containers */
 .container{
     display: flex;
@@ -55,6 +56,7 @@ h1 {
 }
 .nav {
     margin: 25px 10px 0 5px;
+    display: flex;
 }
 /* Items on the nav bar will be spaced out by 14px */
 .nav li{
@@ -118,12 +120,9 @@ a {
     margin: 0px 20px 0 25px;
     padding-bottom: 40px;
   }
-/* Ensures you only have one column of photos on phone or small screen view */
-@media only screen and (min-width: 768px){
 
-}
 /* 648 Ensures you only have one column of photos on breakpoint/small screen view */
-@media only screen and (max-width: 648px){
+@media (max-width: 1050px){
     .header {
         width: 100%;
     }
@@ -133,5 +132,32 @@ a {
         align-items: left;
         text-align: left;
     }
+
+    #menu-icon{
+        display: block;
+    }
+
+    .nav{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all .50s ease;
+    }
+
+    .nav a{
+        display: block;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
 }
 
