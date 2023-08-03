@@ -1,11 +1,19 @@
 /* This style sheet is used to modify the apperance of the website */
 /* Selects background color and padding of all pagess */
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
 html, body {
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #C5DCA0;
   }
+  /* Selects colors of background and font */
+:root{
+    --text-color: #232C33;
+    --bg-color: #C5DCA0;
+}
 /* Allows header(title and nav bar) to stay at the top of the page */
 .header{
     top: 20;
@@ -44,12 +52,7 @@ html, body {
     padding-bottom: 15px;
     border-radius: 5px;
 }
-/* Selects color and font of text */
-h1, h2, h3, h4, p, a {
-    color: #232C33;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
+
 /* Selects the margin/spacing of the header 1 text */
 h1 {
     margin: 25px 10px 0 5px;
