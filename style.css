@@ -34,7 +34,7 @@ html, body {
 }
 
 .icon a{
-    font-size: 30px;
+    font-size: 1.3rem;
     color: var(--text-color);
     margin-right: 18px;
     margin-left: 5px;
@@ -83,10 +83,12 @@ h1 {
 .nav li{
     padding: 14px;
 }
-
+#insta-icon{
+    font-size: 2rem;
+}
 #menu-icon{
     color: var(--text-color);
-    font-size: 30px;
+    font-size: 2rem;
     cursor: pointer;
     z-index: 10001;
     display: none;
