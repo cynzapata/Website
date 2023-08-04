@@ -20,8 +20,8 @@ h1, a{
 h1{
     margin: 15px 22px;
 }
-
-h1:hover{
+/* added color to h1/title when mouse hovers it */
+.header a:hover{
     color: var(--hover-color);
 }
 /* Allows header(title and nav bar) to stay at the top of the page */
