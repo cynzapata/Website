@@ -5,6 +5,7 @@
     font-weight: 400;
     --text-color: #232C33;
     --bg-color: #C5DCA0;
+    --hover-color: white;
 }
 html, body {
     margin: 0;
@@ -13,7 +14,16 @@ html, body {
     color: var(--text-color);
     background-color: var(--bg-color);
   }
+h1, a{
+    color: var(--text-color);
+}
+h1{
+    margin: 15px 22px;
+}
 
+h1:hover{
+    color: var(--hover-color);
+}
 /* Allows header(title and nav bar) to stay at the top of the page */
 .header{
     top: 0;
@@ -70,10 +80,7 @@ html, body {
     border-radius: 5px;
 }
 
-/* Selects the margin/spacing of the header 1 text */
-h1 {
-    margin: 15px 22px;
-}
+
 .nav {
     margin: 15px 22px;
     display: flex;
@@ -83,8 +90,16 @@ h1 {
 .nav li{
     padding: 14px;
 }
+
+.nav a:hover{
+    color: var(--hover-color);
+}
 #insta-icon{
     font-size: 2rem;
+    color: var(--text-color);
+}
+#insta-icon:hover{
+    color: var(--hover-color);
 }
 #menu-icon{
     color: var(--text-color);
@@ -108,6 +123,7 @@ li {
 /* Allows links and text to be on the same line when displayed on page */
 a {
     display: inline-block;
+    text-decoration: none;
 }
 
 /* Selects spacing and alignment of content/text in the contact page */
