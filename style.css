@@ -148,18 +148,25 @@ a {
   }
 
 /* 648 Ensures you only have one column of photos on breakpoint/small screen view */
-@media (max-width: 1050px){
+@media only screen and (max-width: 1050px){
+    .container .box{
+        flex-direction: column;
+    }
 
+    .container .box .gallery{
+        width: 100%;
+    }
+    
     #menu-icon{
         display: block;
         font-size: 40px;
     }
 
     .nav{
-        position: absolute;
+        position:fixed;
         width: 100%;
         height: 100vh;
-        padding: 40px 60px;
+        padding: 50px 60px;
         top: 0;
         bottom: 0;
         left: 100%;
@@ -172,8 +179,8 @@ a {
 
     .nav a{
         display: block;
-        color:blue;
-        padding: 0;
+        color: var(--text-color);
+        padding: 10;
         margin: 0px 0px 40px 0px;
         font-size: 2.2rem;
         font-weight: 400;
@@ -181,6 +188,7 @@ a {
 
     .nav.open{
         left: 0;
+        
 
     }
 
