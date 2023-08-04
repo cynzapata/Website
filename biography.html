@@ -1,25 +1,32 @@
 <!-- This class is created to display information about the artist(myself)-->
 <!DOCTYPE html>
 <html>
-<head>
-     <!-- Title of Class -->
+  <head>
+    <!-- Title of Class -->
     <Title>Bio Page</Title>
+    <!-- Custom CSS for index.html -->
     <link href="style.css" rel="stylesheet">
+    <!-- CSS for Insta logo and side bar menu icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <!-- Header of Website -->
     <div class="container">
-        <div class="header">
-            <h1><a href="index.html">CYNTHIA ZAPATA</a></h1>
-            <div class="nav">
-                  <ul>
+    <div class="header">
+        <h1><a href="index.html">CYNTHIA ZAPATA</a></h1>
+ 
+            <div class="icon">
+                <ul class="nav">
                     <li><a href="biography.html">Biography</a></li>
                     <li><a href="index.html">Artworks</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-        </div>
+                </ul>
+                <a href="https://www.instagram.com/greentomodachi/"><i class="ri-instagram-fill" id="insta-icon"></i></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+          </div>
+    </div>
     <!-- End of Header -->
     <div class="bio">
        <h2>EDUCATION</h2>
@@ -39,6 +46,7 @@
        <p>2022 Student Organization of Modern Art (SOMA) President, Texas, U.S.A.</p>
        <p>2021 Student Organization of Modern Art (SOMA) Vice President, Texas, U.S.A.</p>
     </div>
-
+<!---custom js file link-->
+<script src="website.js"></script>
 </body>
 </html>
