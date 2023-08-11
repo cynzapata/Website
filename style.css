@@ -1,10 +1,10 @@
 /* This style sheet is used to modify the apperance of the website */
-/* Selects background color and padding of all pagess */
+/* Selects font family and weight for all pages */
 * {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
-
+/* Selects background color and spacing for all pages */
 html, body {
   margin: 0;
   padding: 10px;
@@ -16,11 +16,11 @@ html, body {
   color: #232C33;
   background-color: #C5DCA0;
 }
-
+/* Selects font color for header and links */
 h1, a {
   color: #232C33;
 }
-
+/* Selects margins for header */
 h1 {
   margin: 15px 22px;
 }
@@ -50,6 +50,7 @@ h1 {
   padding-bottom: 10px;
 }
 
+/* Selects spacing for sidebar menu and instagram logo */
 .icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,7 +59,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
-
+/* Selects details for sidebar menu and instagram logo */
 .icon a {
   font-size: 1.3rem;
   color: #232C33;
@@ -120,6 +121,7 @@ h1 {
   border-radius: 5px;
 }
 
+/* Selects spacing for nav bar menu */
 .nav {
   margin: 15px 22px;
   display: -webkit-box;
@@ -133,19 +135,22 @@ h1 {
   padding: 14px;
 }
 
+/* Selects color when hovering over nav bar pages */
 .nav a:hover {
   color: white;
 }
 
+/* Selects sizing of instagram logo */
 #insta-icon {
   font-size: 2rem;
   color: #232C33;
 }
-
+/* Selects color of instagram logo when mouse hovers*/
 #insta-icon:hover {
   color: white;
 }
 
+/* Selects details for sidebar menu*/
 #menu-icon {
   color: #232C33;
   font-size: 2rem;
@@ -193,6 +198,7 @@ a {
   padding-bottom: 40px;
 }
 
+/* Underlines all links in contact page */
 .contact a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -218,26 +224,31 @@ a {
   padding-bottom: 40px;
 }
 
+/* Underlines all links in bio page */
 .bio a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 
-/* 648 Ensures you only have one column of photos on breakpoint/small screen view */
+/* Ensures you only have one column of photos on breakpoint/small screen view */
 @media only screen and (max-width: 1050px) {
+  /* chooses positioning of content/images */
   .container .box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  /* There will only be one row of images */
   .container .box .gallery {
     width: 100%;
   }
+  /* Chooses size for menu */
   #menu-icon {
     display: block;
     font-size: 40px;
   }
+  /* SAtyle for Navigation bar/side bar menu  */
   .nav {
     position: fixed;
     width: 100%;
@@ -258,6 +269,7 @@ a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  /* Details for sidebar menu pages */
   .nav a {
     display: block;
     color: #232C33;
@@ -266,6 +278,7 @@ a {
     font-size: 2.2rem;
     font-weight: 400;
   }
+  /* positioning of menu when opened */
   .nav.open {
     left: 0;
   }
